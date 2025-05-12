@@ -126,3 +126,39 @@
     border-color: #3b82f6;
     box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
   }
+
+  button[type="submit"] {
+    background-color: #16a34a;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #15803d;
+  }
+  
+  #formMessage {
+    margin-top: 15px;
+    font-weight: 500;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  @media (max-width: 600px) {
+    .modal-content {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    form {
+      padding: 20px;
+    }
+  }
