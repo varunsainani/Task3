@@ -21,3 +21,19 @@
     font-size: 2.5rem;
     color: #0f172a;
   }
+
+  .dropdown {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .dropdown button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
