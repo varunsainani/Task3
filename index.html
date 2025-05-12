@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Task 3 - JavaScript Interaction</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>Task 3: JavaScript Interaction</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3 - JavaScript Interaction</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Task 3: JavaScript Interaction</h1>
+    </header>
 
-  <div class="dropdown">
-    <button onclick="toggleDropdown()">Toggle Dropdown</button>
-    <div id="dropdown-content" class="dropdown-content">
-      <p>Dropdown Item 1</p>
-      <p>Dropdown Item 2</p>
+    <div class="dropdown">
+      <button onclick="toggleDropdown()">Toggle Dropdown</button>
+      <div id="dropdown-content" class="dropdown-content">
+        <p>Dropdown Item 1</p>
+        <p>Dropdown Item 2</p>
+      </div>
     </div>
-  </div>
-</body>
+
+    <button onclick="openModal()">Open Modal</button>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p>This is a modal window.</p>
+      </div>
+    </div>
+
+    <form id="contactForm" onsubmit="return validateForm()">
+      <h2>Contact Us</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" />
+      <label for="email">Email:</label>
+      <input type="email" id="email" />
+      <button type="submit">Submit</button>
+      <p id="formMessage"></p>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
 </html>
